@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+</head>
+<body>
+ 
+ <nav>
+    <div class="nav-wrapper green accent-4">
+      <a href="#" class="brand-logo center red-text">Adventure Time Trivia</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+<!-- nav done -->
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h1 style="color:blue;">Welcome to Adventure Time Trivia</h1>
+          <div id="welcome-screen">
+            <!-- Type in directions here -->
+            <h3>What is your name?</h3>
+            <form>
+              <div class="input-field col s6">
+                <input id="player-name" type="text" placeholder="Type your name here">
+                <label class="active" for="first_name2">First Name</label>
+                <button type="submit" id="name-button" class="waves-effect waves-light btn green">Submit</button>
+              </div>
+            </form>
+          </div> <!-- end-->
+        </div>
+      </div>
+      <!-- Dashboard -->
+      <div class="row">
+        <div class="col s12">
+          <div id="dashboard">
+            <h3 id="show-player-name">Player Name</h3>
+            <h4>Score: <span id="score">0</span></h4>
+            <h4>Tries left: <span id="tries-left"></span></h4>
+          </div>
+        </div>
+      </div> <!-- end-->
+      <!-- Quest 1 -->
+      <div id="question1" class="question row">
+        <div class="col s12">
+          <h4> What network showed the pilot of Adventure time?</h4>
+          <form>
+            <div class="input-field col s6">
+              <input id="input-question1" type="text" placeholder="Type your answer here">
+              <label class="active" for="input-question1">Question 1</label>
+              <button type="submit" id="question1-btn" class="waves-effect waves-light btn green">Answer</button>
+            </div>
+          </form>
+          <div id="answer1" class="answer">
+            <!-- <h5>Your answer is: <span id="show-player-answer1"></span></h5>
+            <h5>The correct answer is: <span id="correct-answer1"></span></h5> -->
+
+            <h5 id="correct-msg1" class="green-text correct-msg">You are correct!</h5>
+            <h5 id="incorrect-msg1" class="red-text incorrect-msg">WRONG!!!!!</h5>
+          </div>
+        </div> <!-- end-->
+      </div> 
+
+
+
+      <!-- Quest 2 -->
+      <div id="question2" class="question row">
+        <div class="col s12">
+          <h4> Who created Adventure time</h4>
+          <form>
+            <div class="input-field col s6">
+              <input id="input-question2" type="text" placeholder="Type your answer here">
+              <label class="active" for="input-question2">Question 2</label>
+              <button type="submit" id="question2-btn" class="waves-effect waves-light btn green">Answer</button>
+            </div>
+          </form>
+          <div id="answer2" class="answer">
+            <!-- <h5>Your answer is: <span id="show-player-answer2"></span></h5>
+            <h5>The correct answer is: <span id="correct-answer2"></span></h5> -->
+
+            <h5 id="correct-msg2" class="green-text correct-msg">You are correct!</h5>
+            <h5 id="incorrect-msg2" class="red-text incorrect-msg">WRONG!!!!!</h5>
+          </div>
+        </div> <!-- end col -->
+      </div> <!-- question 2 row -->
+
+<!-- Question 3 -->
+      <div id="question3" class="question row">
+        <div class="col s12">
+          <h4>What part of Pendleton has it's own facebook page?</h4>
+          <form>
+            <div class="input-field col s6">
+              <input id="input-question3" type="text" placeholder="Type your answer here">
+              <label class="active" for="input-question3">Question 3</label>
+              <button type="submit" id="question3-btn" class="waves-effect waves-light btn green">Answer</button>
+            </div>
+          </form>
+          <div id="answer3" class="answer">
+            <!-- <h5>Your answer is: <span id="show-player-answer3"></span></h5>
+            <h5>The correct answer is: <span id="correct-answer3"></span></h5> -->
+
+            <h5 id="correct-msg3" class="green-text correct-msg">You are correct!</h5>
+            <h5 id="incorrect-msg3" class="red-text incorrect-msg">WRONG!!!!!</h5>
+          </div>
+        </div> <!-- end col -->
+      </div> <!-- question 3 row -->
+      
+      <!-- Question 4 -->
+      <div id="question4" class="question row">
+        <div class="col s12">
+          <h4>Who has deuteranomaly (person sees red as green)?</h4>
+          <form>
+            <div class="input-field col s6">
+              <input id="input-question4" type="text" placeholder="Type your answer here">
+              <label class="active" for="input-question4">Question 4</label>
+              <button type="submit" id="question4-btn" class="waves-effect waves-light btn green">Answer</button>
+            </div>
+          </form>
+          <div id="answer4" class="answer">
+            <!-- <h5>Your answer is: <span id="show-player-answer4"></span></h5>
+            <h5>The correct answer is: <span id="correct-answer4"></span></h5> -->
+
+            <h5 id="correct-msg4" class="green-text correct-msg">You are correct!</h5>
+            <h5 id="incorrect-msg4" class="red-text incorrect-msg">WRONG!!!!!</h5>
+          </div>
+        </div> <!-- end col -->
+      </div> <!-- question 4 row -->
+      
+      <!-- Question 5 -->
+      <div id="question5" class="question row">
+        <div class="col s12">
+          <h4> Who wore a Sailor Moon dress to a party?</h4>
+          <form>
+            <div class="input-field col s6">
+              <input id="input-question5" type="text" placeholder="Type your answer here">
+              <label class="active" for="input-question2">Question 5</label>
+              <button type="submit" id="question5-btn" class="waves-effect waves-light btn green">Answer</button>
+            </div>
+          </form>
+          <div id="answer5" class="answer">
+            <!-- <h5>Your answer is: <span id="show-player-answer5"></span></h5>
+            <h5>The correct answer is: <span id="correct-answer5"></span></h5> -->
+
+            <h5 id="correct-msg5" class="green-text correct-msg">You are correct!</h5>
+            <h5 id="incorrect-msg5" class="red-text incorrect-msg">WRONG!!!!!</h5>
+          </div>
+        </div> <!-- end col -->
+      </div> <!-- question 5 row -->
+      
+      <!-- Win and Lose Msgs -->
+      <div class="row">
+        <div class="col s12">
+          <h3 id="lose-game-msg" class="red-text">You lost the game!</h3>
+          <!-- put win msg here -->
+        </div> <!-- end col -->
+      </div> <!-- end row -->
+
+    </div> <!-- end -->
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
